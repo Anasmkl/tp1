@@ -1,4 +1,3 @@
-Yep — **no CSS**, just HTML. The browser's default styling will give you the basic look from the screenshot.
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,82 +7,80 @@ Yep — **no CSS**, just HTML. The browser's default styling will give you the b
 
 <body>
 
-    <h1>TechBlog &amp; Portfolio</h1>
+    <header>
+        <h1>TechBlog & Portfolio</h1>
 
-    <ul>
-        <li><a href="#Accueil">Accueil</a></li>
-        <li><a href="#A-propos">À propos</a></li>
-        <li><a href="#Articles">Articles</a></li>
-        <li><a href="#Contact">Contact</a></li>
-    </ul>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>À propos de moi</h2>
+    <main>
 
-    <p>
-        Développeur web avec quelques années d'expérience, je me passionne
-        pour les nouvelles technologies et la création de sites web accessibles.
-    </p>
+        <section id="apropos">
+            <h2>À propos de moi</h2>
 
-    <p>
-        Mon objectif principal est de mettre en œuvre le HTML5 sémantique et
-        les CSS afin de créer des projets à la fois performants, élégants et durables.
-    </p>
+            <p>
+                <strong>Développeur web passionné.</strong> Passionné par le développement
+                et les nouvelles technologies, je partage mes connaissances
+                et mes projets sur mon site.
+            </p>
+        </section>
 
-    <h2>Articles récents</h2>
+        <section id="articles">
+            <h2>Articles récents</h2>
 
-    <h3>Pourquoi adopter le HTML5 sémantique ?</h3>
+            <article>
+                <header>
+                    <h3>Pourquoi adopter le HTML5 sémantique ?</h3>
+                    <time datetime="2006-11-08">2006-11-08</time>
+                </header>
+                <p>Publié le 25 mars 2026</p>
+                <p>
+                    La sémantique web donne du sens au contenu et améliore
+                    la structure des pages.
+                </p>
+                <footer>
+                    <small>Rediger par:<strong>Anass Makhlouf</strong></small>
+                </footer>
+            </article>
 
-    <p><em>Publié le 15 mars 2026</em></p>
+            <article>
+                <header>
+                    <h3>Maîtriser Flexbox</h3>
+                    <time datetime="2007-03-20">2007-03-20 10:00PM</time>
+                </header>
+                <p>Publié le 20 mars 2026</p>
+                <p>
+                    Flexbox permet de créer facilement des mises en page
+                    flexibles et responsives.
+                </p>
+                <footer>
+                    <small>Rediger par:<strong>Moataz Amine</strong></small>
+                </footer>
+            </article>
+        </section>
 
-    <p>
-        La sémantique améliore la structure du contenu et facilite sa
-        compréhension aussi bien pour les développeurs que pour les outils
-        d'accessibilité.
-    </p>
+        
 
-    <p>
-        Elle améliore aussi le référencement naturel (SEO) et permet aux
-        moteurs d'analyse de mieux comprendre la structure de la page.
-    </p>
+    </main>
+    <aside>
+        <blockquote cite="http://127.0.0.1:5500/index.html">index.html</blockquote>   
+    </aside>
 
-    <p>
-        <strong>Article :</strong>
-        <a href="#">Architecture HTML</a>
-    </p>
+    <footer>
+        <p>© 2026 TechBlog - Tous droits réservés.</p>
 
-    <h3>Importance de l'architecture Web</h3>
-
-    <p><em>Publié le 20 mars 2026</em></p>
-
-    <p>
-        Une bonne architecture garantit que les différentes sections du site
-        sont correctement organisées et facilement accessibles.
-    </p>
-
-    <p>
-        <strong>Article :</strong>
-        <a href="#">Architecture Web</a>
-    </p>
-
-    <h2>Ressources &amp; Citations</h2>
-
-    <ul>
-        <li><a href="#">Le web et la sémantique expliquée</a></li>
-        <li><a href="#">MDN Web Docs</a></li>
-    </ul>
-
-    <h3>Me contacter :</h3>
-
-    <p>
-        Email :
-        <a href="mailto:developpeur@example.com">
-            developpeur@example.com
-        </a>
-    </p>
-
-    <p>
-        Adresse : 12 Rue des Développeurs, 75000 Paris, France
-    </p>
+        <address>
+            Email : anasmakhlouf339@gmail.com<br>
+            Adresse : 12 rue des Technologies, 75000 Paris, France
+        </address>
+    </footer>
 
 </body>
 </html>
